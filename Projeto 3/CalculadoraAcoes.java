@@ -16,7 +16,7 @@ public class CalculadoraValores {
 //Sistema
         System.out.println("Sistema de Gestão de Ações");
         System.out.println("======================================");
-        System.out.print("Quantas ações serão registradas? ");
+        System.out.print("Quantas ações serão registradas?: ");
         int numAc = tecl.nextInt();
         float mSemanal[][] = new float [numAc][4];
         float valorDia[][] = new float [numAc][28];
@@ -29,10 +29,10 @@ public class CalculadoraValores {
             int cc = 0;
             for(int i = 0; i < numAc; i++){
                 System.out.println("======================================");
-                System.out.print("Qual é o nome da " + (i+1) + "ª ação que você que registrar? ");
+                System.out.print("Qual é o nome da " + (i+1) + "ª ação que você que registrar?: ");
                 nome[i] = tecl2.nextLine();                              
                     for (int c = 0; c < 28; c += 1){
-                        System.out.print("Qual o valor da ação " + nome[i] + " no Dia " + (c + 1) + " ? " );
+                        System.out.print("Qual o valor da ação " + nome[i] + " no Dia " + (c + 1) + " ?: " );
                         valorDia[cc][c] = tecl.nextFloat();    
                     }
                         mSemanal[i][0] = Math.round((valorDia[i][0] + valorDia[i][1] + valorDia[i][2] + valorDia[i][3] +
